@@ -1,0 +1,51 @@
+﻿@model examenAnalista.Models.Empleado
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dpi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dpi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nHijo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nHijo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salarioBase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salarioBase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaCreacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.empleadoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
